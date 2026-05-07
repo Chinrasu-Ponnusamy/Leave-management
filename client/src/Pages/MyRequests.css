@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+
+.requests-container {
+  font-family: 'DM Sans', sans-serif;
+  margin: 0 20px;
+}
+
+/* Header */
+.requests-title {
+  color: #1b7ddf;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.requests-subtitle {
+  color: #64748b;
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+
+/* Empty */
+.empty-state {
+  text-align: center;
+  padding: 60px 0;
+  color: #475569;
+}
+
+/* List */
+.requests-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Card */
+.request-card {
+  background: #1e293b;
+  border-radius: 14px;
+  padding: 18px 22px;
+  border: 1px solid rgba(255,255,255,0.06);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* Info */
+.request-info {
+  flex: 1;
+}
+
+.request-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.leave-type {
+  color: #f1f5f9;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.request-dates {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.request-dates strong {
+  color: #94a3b8;
+}
+
+.request-reason {
+  color: #475569;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+/* Button */
+.cancel-btn {
+  background: rgba(239,68,68,0.1);
+  border: 1px solid rgba(239,68,68,0.2);
+  border-radius: 8px;
+  padding: 7px 14px;
+  color: #f87171;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: 0.2s;
+}
+
+.cancel-btn:hover {
+  background: rgba(239,68,68,0.2);
+}

@@ -1,0 +1,38 @@
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  main {
+    padding: 20px !important;
+  }
+
+  /* Sidebar collapse */
+  .sidebar {
+    width: 70px !important;
+  }
+
+  .sidebar span {
+    display: none;
+  }
+
+  /* Dashboard cards */
+  .grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Forms */
+  input, select, textarea {
+    font-size: 13px !important;
+  }
+}
+
+/* Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+  main {
+    padding: 24px !important;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+

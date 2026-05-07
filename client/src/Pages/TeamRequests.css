@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+
+.team-container {
+  font-family: 'DM Sans', sans-serif;
+  margin: 0 20px;
+}
+
+/* Header */
+.team-title {
+  color: #1282f1;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.team-subtitle {
+  color: #64748b;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+/* Filters */
+.filter-tabs {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 24px;
+}
+
+.filter-btn {
+  padding: 7px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: capitalize;
+  background: rgba(255,255,255,0.06);
+  color: #94a3b8;
+  transition: 0.15s;
+}
+
+.filter-btn.active {
+  background: #3b82f6;
+  color: #fff;
+}
+
+.count {
+  opacity: 0.7;
+  margin-left: 4px;
+}
+
+/* Empty */
+.empty-state {
+  text-align: center;
+  padding: 60px 0;
+  color: #475569;
+}
+
+/* List */
+.team-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Card */
+.team-card {
+  background: #1e293b;
+  border-radius: 14px;
+  padding: 18px 22px;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+/* Layout */
+.card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.emp-info {
+  display: flex;
+  gap: 12px;
+  flex: 1;
+}
+
+/* Avatar */
+.avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: linear-gradient(135deg,#3b82f6,#8b5cf6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+/* Text */
+.emp-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+  flex-wrap: wrap;
+}
+
+.emp-name {
+  color: #f1f5f9;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.emp-dept {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.dot {
+  color: #64748b;
+}
+
+.leave-info {
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+.leave-reason {
+  color: #475569;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+/* Actions */
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* 🔥 Bigger Buttons */
+.approve-btn,
+.reject-btn {
+  min-width: 120px;
+  justify-content: center;
+  padding: 10px 18px;
+  font-size: 14px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.2s;
+}
+
+/* Approve */
+.approve-btn {
+  background: rgba(16,185,129,0.1);
+  border: 1px solid rgba(16,185,129,0.3);
+  color: #34d399;
+}
+
+.approve-btn:hover {
+  background: rgba(16,185,129,0.2);
+}
+
+/* Reject */
+.reject-btn {
+  background: rgba(239,68,68,0.1);
+  border: 1px solid rgba(239,68,68,0.2);
+  color: #f87171;
+}
+
+.reject-btn:hover {
+  background: rgba(239,68,68,0.2);
+}

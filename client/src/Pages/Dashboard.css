@@ -1,0 +1,67 @@
+.dashboard {
+  font-family: 'DM Sans', sans-serif;
+  margin: 0 20px;
+}
+
+.dashboard-title {
+  color: #1a6bbc;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.dashboard-subtitle {
+  color: #64748b;
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: #1e293b;
+  border-radius: 14px;
+  padding: 20px;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.stat-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stat-label {
+  color: #64748b;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.stat-value {
+  color: #f1f5f9;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.progress-bar {
+  height: 5px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.5s;
+}
+
+.section-title {
+  color: #94a3b8;
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
