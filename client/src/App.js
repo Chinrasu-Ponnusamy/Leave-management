@@ -16,7 +16,7 @@ import "./App.css";
 
 export default function App() {
 
-  // ✅ STATES
+  // STATES
   const [user, setUser] = useState(null);
   const [activeTab, setTab] = useState("dashboard");
   const [isSidebarOpen, setSidebarOpen] = useState(false);
