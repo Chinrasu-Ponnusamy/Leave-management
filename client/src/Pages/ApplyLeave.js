@@ -162,7 +162,7 @@ function ApplyLeave({ user, leaveTypes, balances, onSubmit }) {
         {/* Info */}
         {days > 0 && (
           <div className="info-box">
-            📅 {days} day{days !== 1 ? "s" : ""} requested
+            {days} day{days !== 1 ? "s" : ""} requested
             {remaining !== null && (
               <span
                 style={{
