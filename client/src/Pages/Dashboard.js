@@ -5,17 +5,17 @@ import { Icon, Icons } from "../components/common/Icons";
 
 function Dashboard({ user, leaveTypes, requests, balances }) {
 
-  // ✅ My Data
+  // My Data
   const myRequests = requests.filter(r => r.employee_id === user.id);
   const myBalances = balances.filter(
     b => b.employee_id === user.id && b.year === 2026
   );
 
-  // ✅ Counts (optimized)
+  //  Counts (optimized)
   const approvedCount = myRequests.filter(r => r.status === "approved").length;
   const pendingCount = myRequests.filter(r => r.status === "pending").length;
 
-  // ✅ Role-based pending approvals
+  // Role-based pending approvals
   const pending =
     user.role === "manager"
       ? requests.filter(
@@ -23,7 +23,7 @@ function Dashboard({ user, leaveTypes, requests, balances }) {
         ).length
       : requests.filter(r => r.status === "pending").length;
 
-  // ✅ Reusable Card
+  // Reusable Card
   const StatCard = ({ label, value, sub, color, icon }) => (
     <div className="card">
       <div className="stat-header">
@@ -52,15 +52,15 @@ function Dashboard({ user, leaveTypes, requests, balances }) {
 
   return (
     <div className="dashboard">
-      {/* ✅ Header */}
+      {/*  Header */}
       <h2 className="dashboard-title">
-        Welcome back, {user?.name?.split(" ")[0] || "User"} 👋
+        Welcome back, {user?.name?.split(" ")[0] || "User"} 
       </h2>
       <p className="dashboard-subtitle">
         Here's your leave overview for 2026
       </p>
 
-      {/* ✅ Stats */}
+      {/*  Stats */}
       <div className="grid">
         {user.role === "employee" && (
           <>
@@ -118,7 +118,7 @@ function Dashboard({ user, leaveTypes, requests, balances }) {
         )}
       </div>
 
-      {/* ✅ Leave Balance */}
+      {/*  Leave Balance */}
       {user.role === "employee" && myBalances.length > 0 && (
         <div style={{ marginTop: 28 }}>
           <h3 className="section-title">Leave Balance — 2026</h3>
@@ -176,7 +176,7 @@ function Dashboard({ user, leaveTypes, requests, balances }) {
         </div>
       )}
 
-      {/* ✅ Recent Requests */}
+      {/*  Recent Requests */}
       {user.role === "employee" && myRequests.length > 0 && (
         <div style={{ marginTop: 20 }}>
           <h3 className="section-title">Recent Requests</h3>
